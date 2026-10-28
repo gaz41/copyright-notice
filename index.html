@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>COPYRIGHT FORMAT</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>responsive copyright notice&nbsp;&copy;</h1>
+      </header>
+
+      <main>
+        <div class="description">
+          <div>Dynamically generate content.</div>
+          <div>Select the number of content boxes to be displayed.</div>
+          <div class="spacer">
+            If content is less than page height, copyright notice sits at bottom
+            of page.
+          </div>
+          <div>
+            If content is greater than page height, copyright notice follows the
+            content and sits at bottom of page.
+          </div>
+        </div>
+
+        <label for="boxes">Select number of content boxes to display...</label>
+        <div class="selectContainer">
+          <select id="boxes" class="boxes">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select>
+        </div>
+
+        <!-- display boxes -->
+        <div id="boxContainer"></div>
+      </main>
+
+      <!-- copyright info -->
+      <footer>
+        <div id="copy" class="copy"></div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
